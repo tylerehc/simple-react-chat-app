@@ -4,7 +4,7 @@ const { VERIFY_USER, USER_CONNECTED, LOGOUT } = require('../Events');
 
 const { createUser, createMessage, createChat } = require('../Factories')
 
-const connectedUsers = { }
+let connectedUsers = { }
 
 module.exports = function(socket){
   console.log("Socket ID: " + socket.id);
